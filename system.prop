@@ -1,6 +1,9 @@
 # CNE
 persist.vendor.cne.feature=1
 
+# Display
+qemu.sf.lcd_density=440
+
 # DPM
 persist.vendor.dpm.feature=11
 
