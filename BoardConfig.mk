@@ -112,7 +112,6 @@ BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 KERNEL_LD := LD=ld.lld
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc LLVM=1 TARGET_PRODUCT=$(PRODUCT_DEVICE)
 
-TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/lisa
 TARGET_KERNEL_CONFIG := lisa_defconfig
 
