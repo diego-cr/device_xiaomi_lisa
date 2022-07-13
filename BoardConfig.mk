@@ -90,7 +90,7 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/hidl/vendor_framework_compatibility_matrix.xml \
     $(DEVICE_PATH)/configs/hidl/xiaomi_framework_compatibility_matrix.xml \
-    vendor/aosp/config/device_framework_matrix.xml
+    vendor/aicp/config/device_framework_matrix.xml
 
 DEVICE_MANIFEST_FILE := \
     $(DEVICE_PATH)/configs/hidl/manifest_lahaina.xml \
@@ -114,11 +114,12 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := \
     LLVM=1 \
     LLVM_IAS=1 \
     TARGET_PRODUCT=$(PRODUCT_DEVICE)
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_CUSTOM := true
+TARGET_KERNEL_CLANG_VERSION := latest
 KERNEL_SUPPORTS_LLVM_TOOLS := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/lisa
 TARGET_KERNEL_CONFIG := vendor/lisa-qgki_defconfig
-TARGET_KERNEL_CLANG_VERSION := neutron
-TARGET_CLANG_PREBUILTS_VERSION := neutron
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-neutron
 TARGET_CLANG_WITH_GNU_BINUTILS := true
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
