@@ -13,7 +13,7 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # Inherit from proprietary files
 include vendor/xiaomi/lisa/BoardConfigVendor.mk
-include vendor/xiaomi/lisa-miuicamera/products/board.mk
+-include vendor/xiaomi/lisa-miuicamera/products/board.mk
 
 # A/B
 AB_OTA_UPDATER := true
