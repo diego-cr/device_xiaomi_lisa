@@ -254,6 +254,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     IFAAService
 
+# Ih8sn
+PRODUCT_PACKAGES += \
+    ih8sn
+
 # Init scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qcom.rc \
@@ -411,7 +415,8 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/xiaomi
+    hardware/xiaomi \
+    vendor/ih8sn
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
