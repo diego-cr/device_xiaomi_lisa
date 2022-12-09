@@ -13,9 +13,7 @@
 /dev/xiaomi-touch                                                    u:object_r:touchfeature_device:s0
 
 # Fingerprint
-/data/vendor/fpdump(/.*)?                                           u:object_r:vendor_fingerprint_data_file:s0
 /data/vendor/fpc(/.*)?                                              u:object_r:vendor_fingerprint_data_file:s0
-/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.lisa u:object_r:hal_fingerprint_default_exec:s0
 
 # IR
 /dev/ir_spi                                                          u:object_r:vendor_ir_device:s0
