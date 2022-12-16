@@ -277,10 +277,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-impl \
     android.hardware.media.omx@1.0-service \
+    libavservices_minijail_32 \
     libminijail \
     libavservices_minijail.vendor \
     libcodec2_vndk.vendor \
     libcodec2_hidl@1.1.vendor \
+    libdisplayconfig.qti \
+    libdisplayconfig.system.qti \
     libmm-omxcore \
     libOmxAacEnc \
     libOmxAmrEnc \
@@ -288,6 +291,8 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxG711Enc \
     libOmxQcelp13Enc \
+    libqdMetaData \
+    libqdMetaData.system \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw \
@@ -497,18 +502,3 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml \
     frameworks/native/data/etc/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml \
     frameworks/native/data/etc/android.hardware.wifi.rtt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.rtt.xml
-
-# WiFi Display
-PRODUCT_PACKAGES += \
-    libavservices_minijail_32 \
-    libdisplayconfig.qti \
-    libdisplayconfig.qti.vendor \
-    libdisplayconfig.system \
-    libdisplayconfig.system.qti \
-    libnl \
-    libqdMetaData \
-    libqdMetaData.system \
-    libwfdaac_vendor
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
